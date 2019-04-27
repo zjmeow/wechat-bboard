@@ -1,2 +1,9 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view id='content'>
+<input placeholder="这是一个可以自动聚焦的input" auto-focus />
+<button>搜索</button>
+</view>
+
+<view wx:for="{{all_song}}">
+
+
+</view>

@@ -1,1 +1,9 @@
-/* pages/search/search.wxss */
+#content {
+  display: flex;
+}
+input {
+
+}
+button {
+  
+}

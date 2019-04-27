@@ -1,5 +1,6 @@
 <!--pages/itunes/itunes.wxml-->
-<view wx:for="{{all_song}}">
+
+<view wx:for="{{songs}}">
   <view class='list-white' wx:if="{{item.now_color === 'n0'}}">
     <text class='list-title'>"{{item.title}}"</text>
     <text class='list-point'>"{{item.now_point}}"</text>
