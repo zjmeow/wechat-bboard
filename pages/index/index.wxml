@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view>
+    <image class='menu' src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3489483145,2722373839&fm=26&gp=0.jpg" bindtap="onItunesClick"></image>
+
+    <text class="userinfo-nickname">iTunes</text>
+
+  </view>
+  <view>
+    <image class='menu' src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3489483145,2722373839&fm=26&gp=0.jpg" bindtap="onSearchClick"></image>
+    <block>
+      <text class="userinfo-nickname">歌曲搜索</text>
+    </block>
+  </view>
+  <view>
+    <image class='menu' src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3489483145,2722373839&fm=26&gp=0.jpg" bindtap="onBoardClick"></image>
+    <block>
+      <text class="userinfo-nickname">Billboard 榜单</text>
+    </block>
+  </view>
+</view>

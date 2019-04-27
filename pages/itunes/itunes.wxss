@@ -1,0 +1,18 @@
+/* pages/itunes/itunes.wxss */
+.list-green {
+  background-color: green
+}
+.list-white {
+background-color: white
+}
+.list-red {
+background-color: red
+}
+
+.list-title {
+  font-size: 10px
+}
+.list-point {
+  font-size: 10px
+}
+

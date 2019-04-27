@@ -1,0 +1,18 @@
+<!--pages/itunes/itunes.wxml-->
+<view wx:for="{{all_song}}">
+  <view class='list-white' wx:if="{{item.now_color === 'p0'}}">
+    <text class='list-title'>"{{item.title}}"</text>
+    <!-- <text class='list-title'>"{{item.now_point}}"</text> -->
+  </view>
+  <view class='list-red' wx:if="{{item.now_color === 'p1'}}">
+    <text class='list-title'>"{{item.title}}"</text>
+    <!-- <text class='list-title'>"{{item.now_point}}"</text> -->
+  </view>
+  <view class='list-green' wx:if="{{item.now_color === 'p2'}}">
+    <text class='list-title'>"{{item.title}}"</text>
+    <!-- <text class='list-title'>"{{item.now_point}}"</text> -->
+  </view>
+
+
+
+</view>
