@@ -1,18 +1,48 @@
 /* pages/itunes/itunes.wxss */
-.list-green {
-  background-color: green
+
+.list-dark-red {
+  display: flex;
+  background-color: #FFBBBB;
 }
-.list-white {
-background-color: white
-}
+
 .list-red {
-background-color: red
+  display: flex;
+  background-color: #FFDDDD;
 }
+
+.list-white {
+  display: flex;
+  background-color: white;
+}
+
+.list-dark-green {
+  display: flex;
+  background-color: #BBFFBB;
+}
+
+.list-green {
+  display: flex;
+  background-color: #DDFFDD;
+}
+
 
 .list-title {
-  font-size: 10px
-}
-.list-point {
-  font-size: 10px
+  flex-grow: 1;
+  margin: 0px;
+  padding: 0px;
+  font-size: 30rpx;
+  line-height: 48rpx;
+  height: 48rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
 }
 
+.list-point {
+  margin: 0px;
+  padding: 0px;
+  font-size: 30rpx;
+  line-height: 48rpx;
+  height: 48rpx;
+  width: 100rpx;
+
+}
