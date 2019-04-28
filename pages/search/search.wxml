@@ -5,7 +5,7 @@
   <button bindtap="search">搜索</button>
 </view>
 
-<view class="item" hover-class="bg_red" wx:for="{{songs}}" >
+<view data-id="{{item.id}}" class="item" bindtap="onItemTap" hover-class="bg_red" wx:for="{{songs}}" >
 
   <text class='title'>{{item.title}}</text>
   <view wx:for="{{item.singers}}">

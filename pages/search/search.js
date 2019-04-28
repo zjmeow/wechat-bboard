@@ -13,7 +13,12 @@ Page({
       title:e.detail.value
     });
   },
+  onItemTap: function(e) {
+    wx.navigateTo({
+      url: '../song/song?songId=' + e.currentTarget.dataset.id
+    })
 
+  },
   search:function(e) {
     var that = this;
     wx.request({
@@ -27,7 +32,7 @@ Page({
       },
       fail: function (res) { // 请求失败
       }
-    })
+    });
   }
 
 })

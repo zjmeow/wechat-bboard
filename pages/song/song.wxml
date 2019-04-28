@@ -1,2 +1,2 @@
 <!--pages/song/song.wxml-->
-<text>pages/song/song.wxml</text>
+<text>{{id}}</text>
