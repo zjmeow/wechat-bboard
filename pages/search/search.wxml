@@ -1,9 +1,13 @@
 <view id='content'>
-<input placeholder="这是一个可以自动聚焦的input" auto-focus />
-<button>搜索</button>
+  <input placeholder="这是一个可以自动聚焦的input" auto-focus />
+  <button>搜索</button>
 </view>
 
-<view wx:for="{{songs}}">
+<view class="item" hover-class="bg_red" wx:for="{{songs}}" >
 
-
+  <text class='title'>{{item.title}}</text>
+  <view wx:for="{{item.singers}}">
+    <text class='singer'>{{item.name}}/</text>
+  </view>
+  
 </view>

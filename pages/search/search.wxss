@@ -7,3 +7,27 @@ input {
 button {
   
 }
+.bg_red {
+  background: red;
+}
+
+.item {
+  font-size: 32rpx;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.title {
+  margin:0rpx 10rpx;
+  width: 100%;
+}
+
+.singer {
+  margin:0rpx 10rpx;
+  font-size: 24rpx;
+}
+.spilt {
+  width: 100px;
+  height: 1px;
+  background-color: #000;
+}
