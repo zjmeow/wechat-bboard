@@ -2,30 +2,30 @@
 
 <view wx:for="{{songs}}">
   <view class='list-white' wx:if="{{item.now_color === 'n0'}}">
-    <text class='list-title'>"{{item.title}}"</text>
-    <text class='list-point'>"{{item.now_point}}"</text>
+    <text class='list-title'>{{item.title}}</text>
+    <text class='list-point'>{{item.now_point}}</text>
   </view>
 
   <view class='list-red' wx:if="{{item.now_color === 'n1'}}">
-    <text class='list-title'>"{{item.title}}"</text>
-   <text class='list-point'>"{{item.now_point}}"</text>
+    <text class='list-title'>{{item.title}}</text>
+   <text class='list-point'>{{item.now_point}}</text>
   </view>
 
   <view class='list-dark-red' wx:if="{{item.now_color === 'n2'}}">
-    <text class='list-title'>"{{item.title}}"</text>
-    <text class='list-point'>"{{item.now_point}}"</text>
+    <text class='list-title'>{{item.title}}</text>
+    <text class='list-point'>{{item.now_point}}</text>
   </view>
 
 
 
   <view class='list-green' wx:if="{{item.now_color === 'p1'}}">
-    <text class='list-title'>"{{item.title}}"</text>
-    <text class='list-point'>"{{item.now_point}}"</text>
+    <text class='list-title'>{{item.title}}</text>
+    <text class='list-point'>{{item.now_point}}</text>
   </view>
 
   <view class='list-dark-green' wx:if="{{item.now_color === 'p2'}}">
-    <text class='list-title'>"{{item.title}}"</text>
-    <text class='list-point'>"{{item.now_point}}"</text>
+    <text class='list-title'>{{item.title}}</text>
+    <text class='list-point'>{{item.now_point}}</text>
   </view>
 
 </view>
