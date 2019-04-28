@@ -1,2 +1,8 @@
-<!--pages/board/board.wxml-->
-<text>pages/board/board.wxml</text>
+<view data-id="{{item.id}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{songs}}" >
+
+  <text class='title'>{{item.title}}</text>
+  <view wx:for="{{item.singers}}">
+    <text class='singer'>{{item.name}}/</text>
+  </view>
+  
+</view>

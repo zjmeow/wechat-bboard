@@ -1,66 +1,26 @@
-// pages/board/board.js
+var call = require("../../utils/requests.js")
 Page({
+  onItemTap: function (e) {
+    wx.navigateTo({
+      url: '../song/song?songId=' + e.currentTarget.dataset.id
+    })
+  },
 
-  /**
-   * 页面的初始数据
-   */
+
   data: {
-
+    songs: '',
+    title: ''
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-
+    call.get("billboards"  , this.success);
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  success: function (data) {
+    data.data.reverse();
+    this.setData({
+      songs: data.data 
+    });
   }
+
 })

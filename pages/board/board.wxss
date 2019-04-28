@@ -1,1 +1,21 @@
-/* pages/board/board.wxss */
+.bg-tap {
+  background: #CCC;
+}
+
+.item {
+  padding:10rpx;
+  font-size: 32rpx;
+  display: flex;
+  flex-wrap:wrap;
+  border-bottom:0.5px solid #ddd;
+}
+
+.title {
+  color: #333;
+  width: 100%;
+}
+
+.singer {
+  color: #666;
+  font-size: 24rpx;
+}

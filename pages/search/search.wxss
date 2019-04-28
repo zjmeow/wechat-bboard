@@ -2,32 +2,34 @@
   display: flex;
 }
 input {
-
+  flex-grow: 1;
+  background: #CCC;
+  border-radius: 30rpx;
+  border-color: #CCC;
+  padding: 12rpx;
+  margin: 10rpx;
 }
 button {
-  
+  margin: 10rpx;
 }
-.bg_red {
-  background: red;
+.bg-tap {
+  background: #CCC;
 }
 
 .item {
+  padding:10rpx;
   font-size: 32rpx;
   display: flex;
   flex-wrap:wrap;
+  border-bottom:0.5px solid #ddd;
 }
 
 .title {
-  margin:0rpx 10rpx;
+  color: #333;
   width: 100%;
 }
 
 .singer {
-  margin:0rpx 10rpx;
+  color: #666;
   font-size: 24rpx;
-}
-.spilt {
-  width: 100px;
-  height: 1px;
-  background-color: #000;
 }

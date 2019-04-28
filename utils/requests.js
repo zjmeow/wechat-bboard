@@ -25,6 +25,7 @@ function get(url, doSuccess, doFail) {
     },
     method: 'GET',
     success: function (res) {
+      console.log(res.data);
       doSuccess(res.data);
     },
     fail: function (res) {

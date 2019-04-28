@@ -1,9 +1,6 @@
 var call = require("../../utils/requests.js")
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
     songs:'',
     title:''
