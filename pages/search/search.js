@@ -1,4 +1,4 @@
-// pages/search/search.js
+var call = require("../../utils/requests.js")
 Page({
 
   /**
@@ -20,19 +20,12 @@ Page({
 
   },
   search:function(e) {
+    call.get("search/songs/" + this.data.title, this.searchSuccess);
+  },
+  searchSuccess: function (data) {
     var that = this;
-    wx.request({
-      url: "http://bboard.zjmeow.info/v1/search/songs/" + that.data.title,
-      success: function (res) { //请求成功
-        console.log(res.data);//在调试器里打印网络请求到的json数据
-        that.setData({
-          songs: res.data.data
-        });
-        console.log(that.data.songs);
-      },
-      fail: function (res) { // 请求失败
-      }
+    that.setData({
+      songs: data.data
     });
   }
-
 })
