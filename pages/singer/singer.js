@@ -5,7 +5,8 @@ Page({
   },
 
   onLoad: function(options) {
-    call.get("singers/" + options.singerId, this.getSuccess);
+    //call.get("singers/" + options.singerId, this.getSuccess);
+    call.get("singers/1", this.getSuccess);
   },
   getSuccess: function(data) {
     var that = this;

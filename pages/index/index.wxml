@@ -25,5 +25,6 @@
     <block>
       <text class="userinfo-nickname">Billboard 榜单</text>
     </block>
+        <image class='menu' src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3489483145,2722373839&fm=26&gp=0.jpg" bindtap="onSingerClick"></image>
   </view>
 </view>

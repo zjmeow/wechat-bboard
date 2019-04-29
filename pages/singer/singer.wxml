@@ -1,9 +1,10 @@
 <!--pages/singer/singer.wxml-->
-<image src=""></image>
-<view data-id="{{item.id}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{songs}}" >
+<image class='avatar' src="{{singer.image}}"></image>
+<text class='name'>{{singer.name}}</text>
+<text class='info'>{{singer.info}}</text>
+<view data-id="{{item.id}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{singer.songs}}">
   <text class='title'>{{item.title}}</text>
   <view wx:for="{{item.singers}}">
     <text class='singer'>{{item.name}}/</text>
   </view>
-  
 </view>
