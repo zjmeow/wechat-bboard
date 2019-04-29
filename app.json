@@ -5,7 +5,8 @@
     "pages/itunes/itunes",
     "pages/search/search",
     "pages/board/board",
-    "pages/song/song"
+    "pages/song/song",
+    "pages/singer/singer"
   ],
   "window": {
     "backgroundTextStyle": "light",

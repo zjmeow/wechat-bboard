@@ -1,4 +1,4 @@
-<view data-id="{{item.id}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{songs}}" >
+<view data-id="{{item.songId}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{songs}}" >
 
   <text class='title'>{{item.title}}</text>
   <view wx:for="{{item.singers}}">

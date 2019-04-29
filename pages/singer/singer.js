@@ -1,18 +1,17 @@
 var call = require("../../utils/requests.js")
 Page({
-
   data: {
-    songs: 'asd'
+    singer: ''
   },
 
   onLoad: function(options) {
-    call.get("itunes", this.getSuccess);
+    call.get("singers/" + options.singerId, this.getSuccess);
   },
   getSuccess: function(data) {
     var that = this;
     console.log(data);
     that.setData({
-      songs: data.all_song
+      singer: data.data
     });
   }
 })
