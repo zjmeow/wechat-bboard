@@ -2,7 +2,7 @@
 
   <text class='title'>{{item.title}}</text>
   <view wx:for="{{item.singers}}">
-    <text class='singer'>{{item.name}}/</text>
+    <text class='singer'>{{item.name}}</text>
   </view>
   
 </view>

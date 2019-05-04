@@ -1,4 +1,4 @@
-var call = require("../../utils/requests.js")
+const call = require("../../utils/requests.js")
 Page({
   onItemTap: function (e) {
     wx.navigateTo({

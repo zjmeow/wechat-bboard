@@ -1,4 +1,4 @@
-var call = require("../../utils/requests.js")
+const call = require("../../utils/requests.js")
 Page({
 
   data: {
@@ -20,7 +20,7 @@ Page({
     call.get("search/songs/" + this.data.title, this.searchSuccess);
   },
   searchSuccess: function (data) {
-    var that = this;
+    let that = this;
     that.setData({
       songs: data.data
     });

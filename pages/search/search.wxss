@@ -10,7 +10,7 @@ input {
   margin: 10rpx;
 }
 button {
-  margin: 10rpx;
+  margin: 0rpx 10rpx;
 }
 
 .bg-tap {

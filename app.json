@@ -6,7 +6,8 @@
     "pages/search/search",
     "pages/board/board",
     "pages/song/song",
-    "pages/singer/singer"
+    "pages/singer/singer",
+    "pages/chart/chart"
   ],
   "window": {
     "backgroundTextStyle": "light",

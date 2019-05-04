@@ -1,4 +1,5 @@
-var call = require("../../utils/requests.js")
+const call = require("../../utils/requests.js")
+const ImgLoader = require('../../img-loader/img-loader.js')
 Page({
   data: {
     singer: ''
@@ -13,7 +14,7 @@ Page({
     call.get("singers/" + options.singerId, this.getSuccess);
   },
   getSuccess: function(data) {
-    var that = this;
+    let that = this;
     console.log(data);
     that.setData({
       singer: data.data
