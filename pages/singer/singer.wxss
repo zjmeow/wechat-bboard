@@ -9,6 +9,7 @@
   flex-wrap:wrap;
   border-bottom:0.5px solid #ddd;
 }
+
 .avatar {
   width: 100%;
 }
@@ -22,10 +23,12 @@
   color: #666;
   font-size: 24rpx;
 }
+
 .info {
   color: #666;
   font-size: 24rpx;
 }
+
 .name {
   color: #333;
   font-size: 32rpx;

@@ -8,9 +8,14 @@ Page({
       lazyLoad: true
     },
     songDetail: '',
-    rankText:''
+    rankText:'',
+    singers:''
   },
-
+  onItemTap:function(e){
+    wx.navigateTo({
+      url: '../singer/singer?singerId=' + e.currentTarget.dataset.id
+    })
+  },
   onReady: function() {
     // 获取组件
     this.ecComponent = this.selectComponent('#mychart-dom-bar');
@@ -96,7 +101,8 @@ Page({
     this.init(rank);
     that.setData({
       songDetail: data.data,
-      rankText: rankText
+      rankText: rankText,
+      singers:data.data.singers
     });
   }
 

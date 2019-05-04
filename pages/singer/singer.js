@@ -3,10 +3,14 @@ Page({
   data: {
     singer: ''
   },
+  onItemTap: function (e) {
+    wx.navigateTo({
+      url: '../song/song?songId=' + e.currentTarget.dataset.id
+    })
 
+  },
   onLoad: function(options) {
-    //call.get("singers/" + options.singerId, this.getSuccess);
-    call.get("singers/1", this.getSuccess);
+    call.get("singers/" + options.singerId, this.getSuccess);
   },
   getSuccess: function(data) {
     var that = this;

@@ -1,5 +1,10 @@
-<view class="container">
+<view>
   <text class='rank'>{{rankText}}</text>
   <ec-canvas wx:if="{{!isDisposed}}" id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
 
+<view  data-id="{{item.id}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{singers}}" >
+  
+  <image  class="userinfo-avatar" src="{{item.image}}"></image> 
+  <text class='name'>{{item.name}}</text>
 </view>

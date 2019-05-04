@@ -12,6 +12,7 @@ input {
 button {
   margin: 10rpx;
 }
+
 .bg-tap {
   background: #CCC;
 }
