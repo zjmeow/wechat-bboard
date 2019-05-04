@@ -1,12 +1,12 @@
 const call = require("../../utils/requests.js")
-const ImgLoader = require('../../img-loader/img-loader.js')
+const ImgLoader = require("../../img-loader/img-loader.js")
 Page({
   data: {
-    singer: ''
+    singer: ""
   },
   onItemTap: function (e) {
     wx.navigateTo({
-      url: '../song/song?songId=' + e.currentTarget.dataset.id
+      url: "../song/song?songId=" + e.currentTarget.dataset.id
     })
 
   },

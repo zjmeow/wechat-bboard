@@ -1,4 +1,4 @@
-<view id='content'>
+<view id="content">
   <input placeholder="请输入歌曲名字" auto-focus name="inputTitle"
   bindinput = "userInputTitle"
   />
@@ -7,9 +7,9 @@
 
 <view data-id="{{item.id}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{songs}}" >
 
-  <text class='title'>{{item.title}}</text>
+  <text class="title">{{item.title}}</text>
   <view wx:for="{{item.singers}}">
-    <text class='singer'>{{item.name}}/</text>
+    <text class="singer">{{item.name}}/</text>
   </view>
   
 </view>

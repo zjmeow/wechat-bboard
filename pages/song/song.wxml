@@ -1,9 +1,12 @@
-<view>
-  <text class='rank'>{{rankText}}</text>
-</view>
-<view  data-id="{{item.id}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{singers}}" >
+<view class="my-container">
+<text class="title">{{songDetail.title}}</text>
+<text class="title">历史走势</text>
+<text class="rank">{{rankText}}</text>
+
+<view data-id="{{item.id}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{singers}}" >
   
   <image  class="userinfo-avatar" src="{{item.image}}"></image> 
-  <text class='name'>{{item.name}}</text>
+  <text class="name">{{item.name}}</text>
 </view>
 <button bindtap="onButtonTap">点击查看走势图</button>
+</view>

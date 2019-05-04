@@ -1,11 +1,11 @@
 <!--index.wxml-->
 <view class="container">
 
-    <image class='menu' src="../../image/itunes.jpg" bindtap="onItunesClick"></image>
+    <image class="menu" src="../../image/itunes.jpg" bindtap="onItunesClick"></image>
     <text class="userinfo-nickname">iTunes</text>
-    <image class='menu' src="../../image/birthday.jpg" bindtap="onSearchClick"></image>
+    <image class="menu" src="../../image/birthday.jpg" bindtap="onSearchClick"></image>
       <text class="userinfo-nickname">歌曲搜索</text>
-    <image class='menu' src="../../image/billboard.jpg" bindtap="onBoardClick"></image>
+    <image class="menu" src="../../image/billboard.jpg" bindtap="onBoardClick"></image>
       <text class="userinfo-nickname">Billboard 榜单</text>
 
 </view>

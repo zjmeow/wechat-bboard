@@ -2,7 +2,7 @@ const call = require("../../utils/requests.js")
 Page({
 
   data: {
-    songs: 'asd'
+    songs: "asd"
   },
 
   onLoad: function(options) {

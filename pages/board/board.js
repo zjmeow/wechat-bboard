@@ -2,13 +2,13 @@ const call = require("../../utils/requests.js")
 Page({
   onItemTap: function (e) {
     wx.navigateTo({
-      url: '../song/song?songId=' + e.currentTarget.dataset.id
+      url: "../song/song?songId=" + e.currentTarget.dataset.id
     })
   },
 
   data: {
-    songs: '',
-    title: ''
+    songs: "",
+    title: ""
   },
 
   onLoad: function (options) {

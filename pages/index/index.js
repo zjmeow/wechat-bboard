@@ -4,27 +4,27 @@ Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse("button.open-type.getUserInfo")
   },
 
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../itunes/itunes'
+      url: "../itunes/itunes"
     })
   },
   onItunesClick: function () {
     wx.navigateTo({
-      url: '../itunes/itunes'
+      url: "../itunes/itunes"
     })
   },
   onSearchClick: function () {
     wx.navigateTo({
-      url: '../search/search'
+      url: "../search/search"
     })
   },
   onBoardClick: function () {
     wx.navigateTo({
-      url: '../board/board'
+      url: "../board/board"
     })
   },
   onLoad: function () {

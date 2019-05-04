@@ -1,5 +1,5 @@
 const call = require("../../utils/requests.js")
-import * as echarts from '../../ec-canvas/echarts';
+import * as echarts from "../../ec-canvas/echarts";
 
 Page({
 
@@ -7,32 +7,32 @@ Page({
     ec: {
       lazyLoad: true
     },
-    songDetail: '',
-    rankText: '',
-    singers: ''
+    songDetail: "",
+    rankText: "",
+    singers: ""
   },
   onItemTap: function (e) {
     wx.navigateTo({
-      url: '../singer/singer?singerId=' + e.currentTarget.dataset.id
+      url: "../singer/singer?singerId=" + e.currentTarget.dataset.id
     })
   },
   onReady: function () {
     // 获取组件
-    this.ecComponent = this.selectComponent('#mychart-dom-bar');
+    this.ecComponent = this.selectComponent("#mychart-dom-bar");
   },
 
   setOption: function (chart, rank) {
     let option = {
       title: {
-        text: '走势',
-        left: 'center'
+        text: "走势",
+        left: "center"
       },
       color: ["#37A2DA", "#67E0E3", "#9FE6B8"],
       legend: {
-        data: [''],
+        data: [""],
         top: 50,
-        left: 'center',
-        backgroundColor: 'red',
+        left: "center",
+        backgroundColor: "red",
         z: 100
       },
       grid: {
@@ -40,27 +40,27 @@ Page({
       },
       tooltip: {
         show: true,
-        trigger: 'axis'
+        trigger: "axis"
       },
       xAxis: {
-        type: 'category',
+        type: "category",
         boundaryGap: false,
         data: rank,
         // show: false
       },
       yAxis: {
-        x: 'center',
-        type: 'value',
+        x: "center",
+        type: "value",
         splitLine: {
           lineStyle: {
-            type: 'dashed'
+            type: "dashed"
           }
         }
         // show: false
       },
       series: [{
-        name: 'A',
-        type: 'line',
+        name: "A",
+        type: "line",
         smooth: true,
         data: rank
       }]
@@ -93,10 +93,10 @@ Page({
   getSuccess: function (data) {
     let that = this;
     let rank = [];
-    let rankText = '';
+    let rankText = "";
     data.data.billboards.forEach(function (e) {
       rank.push(e.rank);
-      rankText += e.rank + '-';
+      rankText += e.rank + "-";
     });
     this.init(rank);
     that.setData({

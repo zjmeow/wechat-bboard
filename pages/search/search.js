@@ -1,4 +1,4 @@
-const call = require("../../utils/requests.js")
+const call = require('../../utils/requests.js')
 Page({
 
   data: {
@@ -17,7 +17,7 @@ Page({
 
   },
   search:function(e) {
-    call.get("search/songs/" + this.data.title, this.searchSuccess);
+    call.get('search/songs/' + this.data.title, this.searchSuccess);
   },
   searchSuccess: function (data) {
     let that = this;

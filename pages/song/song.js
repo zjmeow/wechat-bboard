@@ -1,19 +1,19 @@
 const call = require("../../utils/requests.js")
 Page({
   data: {
-    songDetail: '',
-    rankText: '',
-    singers: '',
-    songId:''
+    songDetail: "",
+    rankText: "",
+    singers: "",
+    songId:""
   },
   onItemTap: function(e) {
     wx.navigateTo({
-      url: '../singer/singer?singerId=' + e.currentTarget.dataset.id
+      url: "../singer/singer?singerId=" + e.currentTarget.dataset.id
     });
   },
   onButtonTap: function() {
     wx.navigateTo({
-      url: '../chart/chart?songId=' + this.data.songId
+      url: "../chart/chart?songId=" + this.data.songId
     });
 
   },
@@ -27,10 +27,10 @@ Page({
   getSuccess: function(data) {
     let that = this;
     let rank = [];
-    let rankText = '';
+    let rankText = "";
     data.data.billboards.forEach(function(e) {
       rank.push(e.rank);
-      rankText += e.rank + '-';
+      rankText += e.rank + "-";
     });
     that.setData({
       songDetail: data.data,
