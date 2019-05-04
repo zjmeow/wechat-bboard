@@ -12,12 +12,6 @@ Page({
       url: '../itunes/itunes'
     })
   },
-  onSingerClick:function() {
-    wx.navigateTo({
-      url: '../singer/singer'
-    })
-  },
-
   onItunesClick: function () {
     wx.navigateTo({
       url: '../itunes/itunes'
