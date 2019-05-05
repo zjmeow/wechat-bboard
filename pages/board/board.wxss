@@ -12,10 +12,31 @@
 
 .title {
   color: #333;
-  width: 100%;
+  
+}
+
+.first-title {
+width: 100%;
 }
 
 .singer {
   color: #666;
   font-size: 24rpx;
+}
+
+.rank {
+  color: #999;
+  font-size: 34rpx;
+  display: inline-block;
+  width: 100rpx;
+  text-align: center;
+}
+
+.change {
+  margin-top: 8rpx;
+  color: #999;
+  font-size: 24rpx;
+  display: inline-block;
+  width: 100rpx;
+  text-align: center;
 }

@@ -1,8 +1,13 @@
-<view data-id="{{item.songId}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{songs}}" >
-
-  <text class="title">{{item.title}}</text>
+<view data-id="{{item.songId}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{songs}}">
+  <view class='first-title'>
+    <text class="rank">{{item.rank}}</text>
+    <text class="title">{{item.title}}</text>
+  </view>
+  <text class="change" wx:if = "{{item.rank - item.previous > 0}}">↓ {{item.rank - item.previous}}</text>
+  <text class="change" wx:if = "{{item.rank - item.previous < 0}}">↑ {{item.previous - item.rank}}</text>
+  <text class="change" wx:if = "{{item.rank - item.previous == 0}}">- {{item.rank - item.previous}}</text>
   <view wx:for="{{item.singers}}">
     <text class="singer">{{item.name}}</text>
   </view>
-  
+
 </view>
