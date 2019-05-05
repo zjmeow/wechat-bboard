@@ -1,12 +1,18 @@
 <view class="my-container">
-<text class="title">{{songDetail.title}}</text>
-<text class="title">历史走势</text>
-<text class="rank">{{rankText}}</text>
-
-<view data-id="{{item.id}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{singers}}" >
+  <text class="title">{{songDetail.title}}</text>
+  <text class="rank">历史走势：{{rankText}}</text>
+  <text class="rank">在榜周数：{{rankTotal}}</text>
+  <text class="rank">得冠周数：{{rankFirst}}</text>
+  <text class="rank">前十周数：{{rankTen}}</text>
+  <text class="rank">前五十周数：{{rankFifty}}</text>
   
-  <image  class="userinfo-avatar" src="{{item.image}}"></image> 
-  <text class="name">{{item.name}}</text>
 </view>
-<button bindtap="onButtonTap">点击查看走势图</button>
-</view>
+
+<text class="singer-title">歌手</text>
+  <view data-id="{{item.id}}" class="item" bindtap="onItemTap" hover-class="bg-tap" wx:for="{{singers}}">
+
+    <image class="userinfo-avatar" src="{{item.image}}" wx:if="{{item.image != null}}"></image>
+    <image class="userinfo-avatar" src="http://img3.imgtn.bdimg.com/it/u=1267736073,3128875990&fm=26&gp=0.jpg" wx:if="{{item.image == null}}"></image>
+    <text class="name">{{item.name}}</text>
+  </view>
+  <button class="rank-button" bindtap="onButtonTap">点击查看走势图</button>

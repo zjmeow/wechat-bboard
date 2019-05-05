@@ -34,6 +34,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    url: "http://bboard.zjmeow.info/v1/"
+    url: "https://bboard.zjmeow.info/v1/"
   }
 })

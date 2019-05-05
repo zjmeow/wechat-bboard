@@ -22,9 +22,13 @@ Page({
   },
 
   setOption: function (chart, rank) {
+    let x = [];
+    for(let i = 1; i <= rank.length;i++) {
+      x.push(i);
+    }
     let option = {
       title: {
-        text: "走势",
+        text: "",
         left: "center"
       },
       color: ["#37A2DA", "#67E0E3", "#9FE6B8"],
@@ -43,12 +47,13 @@ Page({
         trigger: "axis"
       },
       xAxis: {
+        axisLine: { onZero: false },
         type: "category",
         boundaryGap: false,
-        data: rank,
-        // show: false
+        data: x,
       },
       yAxis: {
+        inverse: true,
         x: "center",
         type: "value",
         splitLine: {
@@ -56,9 +61,10 @@ Page({
             type: "dashed"
           }
         }
-        // show: false
+
       },
       series: [{
+        
         name: "A",
         type: "line",
         smooth: true,

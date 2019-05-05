@@ -1,8 +1,8 @@
 const call = require("../../utils/requests.js")
-const ImgLoader = require("../../img-loader/img-loader.js")
 Page({
   data: {
-    singer: ""
+    singer: "",
+    avatar:"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2365325918,1593856678&fm=26&gp=0.jpg"
   },
   onItemTap: function (e) {
     wx.navigateTo({
@@ -15,9 +15,9 @@ Page({
   },
   getSuccess: function(data) {
     let that = this;
-    console.log(data);
     that.setData({
-      singer: data.data
+      singer: data.data,
+      avatar: data.data.image == null ? data.avatar : data.data.image
     });
   }
 })
